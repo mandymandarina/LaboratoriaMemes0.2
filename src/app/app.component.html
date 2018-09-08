@@ -1,0 +1,9 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<app-meme *ngFor="let meme of memes" [title] ='meme.title'
+          [image] ='meme.image'
+          [description] = 'meme.description'          
+></app-meme><!-- input corchetes, output parentesis, bidireccional corchetes y parentesis -->
+
+<app-meme-form (onMeme)="onNewMeme($event)"></app-meme-form>
+
